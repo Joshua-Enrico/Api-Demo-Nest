@@ -7,8 +7,8 @@ import { join } from 'path';
 
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
-  app.useStaticAssets(join(__dirname, '/assets'), {
-    prefix: '/docs',
+  app.useStaticAssets(join(__dirname, 'public/'), {
+    prefix: '/docs'
   });
   app.useGlobalPipes(new ValidationPipe());
   const config = new DocumentBuilder().setTitle('Demo Application')
