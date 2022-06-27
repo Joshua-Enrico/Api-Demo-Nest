@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Post } from '@nestjs/common';
+import { Body, Controller, Get, Post, Res } from '@nestjs/common';
 import { CreateClientDto } from '../dtos/client.dtos';
 import { ClientService } from '../services/client.service';
 
@@ -16,6 +16,7 @@ export class ClientController {
 /* A method that receives a new client and returns an object. */
     @Post('/creacliente')
     createClient(@Body() newClient: CreateClientDto): object {
+
         return this.clientService.createClient(newClient);
     }
 
