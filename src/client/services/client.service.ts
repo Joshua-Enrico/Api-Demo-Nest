@@ -29,8 +29,7 @@ export class ClientService {
      * @param {CreateClientDto} client - CreateClientDto
      * @returns The new client that was created.
      */
-    async createClient(client: CreateClientDto) {
-
+    async createClient(client: CreateClientDto): Promise<CreateClientDto> {
 
 
         const newClient = await prisma.client.create({
