@@ -13,12 +13,6 @@ export class ClientController {
     ) { }
 
 
-    @Get()
-    @Render('index')
-    root() {
-    }
-
-
     /* A method that receives a new client and returns an object. */
     @Post('/creacliente')
     @ApiResponse({
