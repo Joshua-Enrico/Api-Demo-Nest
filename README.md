@@ -4,7 +4,9 @@
 Si bien han mencionado un stack de tecnologias que manejo, esta esta api estoy usando algunas tecnologias diferentes, ya que hoy en dia las bigTech las usan para proyectos nuevos, con la finalidad de estar a la vanguardia de lo nuevo que sale y sacarle el mayor provecho de las librerias que se tiene al alcance
 En esta ocasion fui por una arquitectura Serverless, eso quiere decir que no estaremos usando un servidor  y tenemos tanto la Api y Base de datos en hostings diferentes
 
-
+## A mencionar
+Se esta obviando la implementacion de una autenticacion, por temas de poca especificaion en los requerimientos del Test.
+En un princpio iba a Hostear la api en lambda de Aws con CI/CD, pero al final decidi por los servicios Cloud que estare detallando mas abajo.
 
 
 
