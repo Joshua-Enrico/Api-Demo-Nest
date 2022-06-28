@@ -51,5 +51,5 @@ Para produccion
 ## Documentacion
 Ya que estamos usando swagger, no documentare los endpoints aqui
 
-[Linkt de Swagger Docs](https://api-demo-nest.vercel.app/docs/)
+[Link de Swagger Docs](https://api-demo-nest.vercel.app/docs/)
 
