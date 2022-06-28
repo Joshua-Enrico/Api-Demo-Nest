@@ -10,6 +10,7 @@ async function bootstrap() {
   app.useStaticAssets(join(__dirname,"..", 'assets'), {
     prefix: '/docs'
   });
+  app.setViewEngine('html');
   app.useGlobalPipes(new ValidationPipe());
   const config = new DocumentBuilder().setTitle('Demo Application')
   .setDescription("Demo API Application")

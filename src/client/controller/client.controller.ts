@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Param, Post, Res } from '@nestjs/common';
+import { Body, Controller, Get, Param, Post, Render, Res } from '@nestjs/common';
 import { ClientKpiDto, ClientResponseDto, CreateClientDto, errorResponseDto, listClientRDto } from '../dtos/client.dtos';
 import { ClientService } from '../services/client.service';
 import { ApiResponse } from '@nestjs/swagger';
@@ -12,6 +12,11 @@ export class ClientController {
 
     ) { }
 
+
+    @Get()
+    @Render('index')
+    root() {
+    }
 
 
     /* A method that receives a new client and returns an object. */
